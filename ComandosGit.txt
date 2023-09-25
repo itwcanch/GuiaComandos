@@ -1,0 +1,245 @@
+   23  git --version
+   27  git clone https://github.com/itwcanch/DO400-apps.git
+   44  git config --global user.name "itwcanch"
+   45  git config --global user.email "itwcanch@gmail.com""
+   46  git config --global user.email "itwcanch@gmail.com"
+   47  git config --list
+   52  git config --list
+   54  mkdir git-basics
+   55  cd git-basics/
+   57  git init .
+   61  git add person.py
+   62  git status
+   63  git commit -m "Initial Person implementation"
+   64  git branch -M main
+   65  git status
+   67  git diff
+   68  git add -
+   69  git add .
+   70  git status
+   71  git commit -m "Enhanced greeting"
+   72  git log
+   73  git show
+   75  git add person.py 
+   76  git reset HEAD person.py
+   77  git status
+   78  git checkout -- person.py
+   84  git init .
+   88  git add helloworld.py 
+   89  git commit -m "added helloworld"
+   90  git branch -M main
+   91  git checkout -b different-name
+   92  git status
+   93  git diff
+   94  git add .
+   95  git commit -m 'change name'
+   96  git log
+   97  git checkout main
+   98  git log
+   99  git merge different-name
+  100  git log
+  101  git branch -b different-name 
+  102  git branch -d different-name 
+  104  git checkout -b goodbye-name
+  105  git commit -a -m 'sya goodbye'
+  106  git checkout main
+  108  git commit -a -m 'say welcome'
+  109  git diff goodbye-name
+  110  git merge goodbye-name 
+  113  git commit -a
+  114  git branch -d goodbye-name 
+  115  git log
+  123  git init .
+  125  git add helloworld.py 
+  126  git commit -m "added helloworld"
+  127  git branch -M main
+  128  git remote -v
+  129  git remote add origin https://github.com/itwcanch/hello-remote.git
+  130  git remote -v
+  131  git push --set-upstream origin main
+  132  git branch improve-greeting
+  133  git checkout improve-greeting 
+  135  git status
+  136  git add helloworld.py 
+  137  git status
+  138  git commit -m "added parameter to greeting message"
+  139  git push --set-upstream origin improve-greeting 
+  146  git init .
+  148  git init .
+  149  git add helloworld.py 
+  150  git commit -m "added helloworld"
+  151  git branch -M main
+  152  git remote -v
+  153  git remote add origin https://github.com/itwcanch/hello-remote.git
+  154  git remote -v
+  155  git push --set-upstream origin main
+  156  git checkout -b improve-greeting
+  158  git status
+  159  git add helloworld.py 
+  160  git status
+  161  git commit -m "added parameter to greeting message"
+  162  git push --set-upstream origin improve-greeting
+  164  git commit -a -m "extracted cli argument to variable"
+  165  git push
+  166  git checkout main
+  168  git log origin/main
+  169  git checkout main
+  172  git init -
+  173  git init .
+  175  git remote add origin https://github.com/itwcanch/do400-greeting-console.git
+  176  git add -A
+  184  git add -A
+  185  git commit -m 'Initial commit'
+  186  git branch -M main
+  189  git push origin main
+  223  git commit -a -m "Add release stage"
+  224  git push origin main
+  227  git commit -a -m "Add release stage"
+  228  git push origin main
+  240  git commit -a -m "Add release stage"
+  241  git push origin main
+  246  git commit -a -m "Add release stage"
+  247  git push origin main
+  253  git init -
+  254  git remote add origin https://github.com/itwcanch/do400-greeting-service.git
+  255  git init .
+  256  git remote add origin https://github.com/itwcanch/do400-greeting-service.git
+  257  git add -A
+  260  git add -A
+  261  git commit -m "Inital commit"
+  262  git branch -M main
+  263  git push origin main
+  264  oc new-app --name greeting-service https://github.com/itwcanch/do400-greeting-service --strategy=docker
+  269  git checkout main
+  270  git log origin/main
+  271  git merge origin/main
+  272  git branch -d improve-greeting
+  273  git log
+  278  git checkout main
+  282  git init -
+  283  git init .
+  284  git remote add origin https://github.com/itwcanch/do400-greeting-console.git
+  285  git add -A
+  301  git commit -a -m "Fix greeting and add Deploy stage"
+  302  git push origin main
+  308  git checkout solutions
+  311  git checkout solutions
+  312  git init .
+  313  git checkout solutions
+  314  history | grep git
+  315  git status
+  316  git checkout -b solutions
+  319  git checkout main
+  322  git init .
+  323  git remote add origin https://github.com/itwcanch/do400-deploying-environments.git
+  324  git init .
+  325  git add -A
+  326  git commit -m "Initial commit"
+  327  git branch -M main
+  328  git push origin HEAD
+  330  git add Jenkinsfile 
+  331  git commit -m "Added Jenkins integration"
+  332  git push origin HEAD
+  346  git add Jenkinsfile 
+  347  git commit -m "Added Build Image stage"
+  348  git push origin HEAD
+  350  git add Jenkinsfile 
+  351  git commit -m "Added Build Image stage"
+  352  git push origin HEAD
+  355  git add Jenkinsfile 
+  356  git commit -m "Added Build Image stage"
+  357  git push origin HEAD
+  384  git checkout main
+  385  git pull origin manin
+  386  git pull origin main
+  387  git checkout -b deployment-strategies
+  388  git push origin deployment-strategies
+  394  git ckeckout -b jenkins-testing
+  395  git checkout -b jenkins-testing
+  402  git add Jenkinsfile 
+  403  git commit -m 'added basic pipeline in Jenkinsfile'
+  404  git push origin jenkins-testing
+  408  git add Jenkinsfile 
+  409  git commit -m 'Add stage Unit test al Jenkinsfile'
+  410  git push origin jenkins-testing 
+  413  git checkout main
+  417  git init .
+  418  git remote add origin https://github.com/itwcanch/do400-deploying-lab.git
+  419  git add -A
+  420  git commit -m "Initial commit"
+  423  git add Jenkinsfile 
+  424  git commit -m "Added Jenkinsfile"
+  425  git push --set-upstream origin main
+  426  git push 
+  427  git push --set-upstream origin master
+  429  git add Jenkinsfile 
+  430  git commit -m "Added pipeline stage to build and push image"
+  431  git push
+  433  git add Jenkinsfile 
+  434  git commit -m "Added pipeline stage to build and push image"
+  435  git push
+  453  git checkout -b deployments
+  455  git add Jenkinsfile 
+  456  git commit -m "Added test deployment"
+  457  git push --set-upstream origin deployments 
+  462  git commit -m "Added test deployment"
+  463  git push
+  464  history  grep git
+  465  history| grep git
+  466  history| grep git > comandosGit.txt
+  471  git init .
+  472  git remote origin https://github.com/itwcanch/GuiaEstudio.git
+  473  history | grep git remote 
+  474  history | grep 'git remote' 
+  475  git remote add origin https://github.com/itwcanch/GuiaEstudio.git
+  476  git add -A
+  477  git commit -m "Actualización archivo comandos Jenkins'
+  478  git commit -m "Actualización archivo comandos Jenkins"
+  479  history| grep git > comandosGit.txt
+  480  git add .
+  481  git add comandosGit.txt 
+  482  git commit -m "Actualización archivo comandos Jenkins"
+  483  git push
+  484  git push --set-upstream origin master 
+  485  git push
+  487  git status
+  488  git checkout main
+  489  git status
+  490  git checkout main
+  491  git checkout master
+  492  git merge master 
+  493  git checkout main
+  494  git push --set-upstream origin master 
+  495  git push --set-upstream origin main
+  496  git push --set-upstream main master
+  498  git checkout main
+  499  git checkoutmaster
+  500  git checkout master
+  501  git merge main
+  502  git checkout master
+  503  git merge main
+  504  git push origin master
+  506  git status
+  507  git checkout main
+  508  git status
+  509  git branch
+  510  git branch -a
+  511  git checkout -b main
+  512  git merge master
+  513  git push  origin main
+  516  git status
+  519  git add -
+  520  git add .
+  521  git commit -m "Add nuevo archivo"
+  522  git push
+  523  git push --set-upstream origin main
+  524  git pull origin main
+  529  history | grep git
+  531  git init .
+  532  git checkout main
+  533  git checkout -b main
+  534  git status
+  535  git remote add origin https://github.com/itwcanch/GuiaComandos.git
+  536  git add -A
+  537  git commit -m "Adicionar archivo de comandos Git"
+  538  history | grep 'git' > ComandosGit.txt
